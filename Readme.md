@@ -126,6 +126,3 @@ GET /analyze?query=Why did Tesla stock drop today?&days=1
 
 ---
 
-## License
-
-MIT (or your chosen license)
