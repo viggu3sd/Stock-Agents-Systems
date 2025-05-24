@@ -23,13 +23,13 @@ stock-related questions through modular subagents.
 git clone https://github.com/YOUR_USERNAME/stock-multi-agent-system.git
 cd stock-multi-agent-system
 
-text
+
 
 ### 2. Install dependencies
 
 pip install -r requirements.txt
 
-text
+
 
 ### 3. Set up your Alpha Vantage API key
 
@@ -38,13 +38,13 @@ text
 
 ALPHA_VANTAGE_KEY=your_actual_api_key_here
 
-text
+
 
 ### 4. Run the server
 
 uvicorn app.main:app --reload --port 8000
 
-text
+
 
 - Visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) for the interactive API docs.
 
@@ -57,18 +57,18 @@ text
 **Request:**
 GET /identify_ticker?query=Tesla
 
-text
+
 **Response:**
 {"ticker": "TSLA"}
 
-text
+
 
 ### Get News
 
 **Request:**
 GET /news?ticker=TSLA
 
-text
+
 **Response:**
 {
 "news": [
@@ -77,25 +77,20 @@ text
 ]
 }
 
-text
 
 ### Get Price
 
 **Request:**
 GET /price?ticker=TSLA
 
-text
 **Response:**
 {"price": 180.45}
-
-text
 
 ### Price Change
 
 **Request:**
 GET /price_change?ticker=TSLA&days=7
 
-text
 **Response:**
 {
 "from": "2024-05-16",
@@ -106,14 +101,11 @@ text
 "percent": 6.15
 }
 
-text
-
 ### Analysis
 
 **Request:**
 GET /analyze?query=Why did Tesla stock drop today?&days=1
 
-text
 **Response:**
 {
 "ticker": "TSLA",
@@ -123,8 +115,6 @@ text
 "analysis": "The stock price decreased by 2.34% over the last 1 day(s). Recent news headlines: ['Tesla faces regulatory scrutiny', 'Market volatility impacts tech stocks']"
 }
 
-text
-
 ---
 
 ## Architecture
@@ -132,7 +122,6 @@ text
 - **FastAPI** for the REST API
 - **Alpha Vantage** for stock data and news
 - **Modular agent structure** for maintainability
-
 
 ---
 
