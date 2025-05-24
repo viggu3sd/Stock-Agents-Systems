@@ -1,7 +1,9 @@
-text
+
 # Stock Multi-Agent System
 
 A modular multi-agent system for stock analysis using FastAPI and Alpha Vantage.
+Develop a multi-agent system using Google ADK (Agent Developer Kit) that can answer 
+stock-related questions through modular subagents.
 
 ## Features
 
@@ -131,15 +133,6 @@ text
 - **Alpha Vantage** for stock data and news
 - **Modular agent structure** for maintainability
 
----
-
-## Video Demo
-
-- [Include a link to your demo video here]
-- In the video, show:
-  - Sample queries in `/docs`
-  - How each endpoint works
-  - Brief explanation of your code structure
 
 ---
 
